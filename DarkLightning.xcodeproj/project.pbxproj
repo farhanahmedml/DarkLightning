@@ -118,9 +118,7 @@
 		B495CB631EF6976000B713A2 /* DataDecodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB621EF6976000B713A2 /* DataDecodings.swift */; };
 		B495CB641EF6976000B713A2 /* DataDecodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB621EF6976000B713A2 /* DataDecodings.swift */; };
 		B495CB651EF6976000B713A2 /* DataDecodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB621EF6976000B713A2 /* DataDecodings.swift */; };
-		B495CB671EF69DFE00B713A2 /* TCPMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB661EF69DFE00B713A2 /* TCPMode.swift */; };
 		B495CB681EF69DFE00B713A2 /* TCPMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB661EF69DFE00B713A2 /* TCPMode.swift */; };
-		B495CB691EF69DFE00B713A2 /* TCPMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB661EF69DFE00B713A2 /* TCPMode.swift */; };
 		B495CB6B1EF69E1000B713A2 /* BoolValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB6A1EF69E1000B713A2 /* BoolValue.swift */; };
 		B495CB6C1EF69E1000B713A2 /* BoolValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB6A1EF69E1000B713A2 /* BoolValue.swift */; };
 		B495CB6D1EF69E1000B713A2 /* BoolValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CB6A1EF69E1000B713A2 /* BoolValue.swift */; };
@@ -250,7 +248,7 @@
 		92C933267FE378EE72A72B79 /* DevicePortSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DevicePortSpec.swift; sourceTree = "<group>"; };
 		94959069E776E9070F15DF93 /* NetworkUInt16.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkUInt16.swift; sourceTree = "<group>"; };
 		988D713FFAA47B0A2067BCE6 /* StreamDelegateFake.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StreamDelegateFake.swift; sourceTree = "<group>"; };
-		99611684723BCA374D291E65 /* iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOS.framework; path = DarkLightning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99611684723BCA374D291E65 /* DarkLightning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkLightning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A400BA151AABC7538E68A26 /* CachedDevicesSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CachedDevicesSpec.swift; sourceTree = "<group>"; };
 		9B87A03DE6688671269DB06E /* DisconnectStreamReaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisconnectStreamReaction.swift; sourceTree = "<group>"; };
 		9BA48BEDE4F0C87AAB751BAC /* Debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -369,7 +367,7 @@
 		34CC5A1C8445EEEAEC11D4F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99611684723BCA374D291E65 /* iOS.framework */,
+				99611684723BCA374D291E65 /* DarkLightning.framework */,
 				FB3FEF581B0A0B97C24E1829 /* DarkLightning.framework */,
 				8E1B43C81F5027CBCBC5B4E9 /* Tests.xctest */,
 				91928CBCE1744FA0CAD337B0 /* DarkLightning.framework */,
@@ -465,6 +463,7 @@
 				ED0BDD8CEE88DD8579E1C284 /* DeviceDelegate.swift */,
 				E2FCDA9E1ED71AE428061282 /* Devices.swift */,
 				2DA2AA2ED5507213CA37FDDF /* USBMuxMessage.swift */,
+				B495CB661EF69DFE00B713A2 /* TCPMode.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -655,7 +654,6 @@
 				37B113CA77849199126F6F60 /* USBMuxMessageDataArray.swift */,
 				B495CB511EF5CF1100B713A2 /* IncomingMessages.swift */,
 				B495CB621EF6976000B713A2 /* DataDecodings.swift */,
-				B495CB661EF69DFE00B713A2 /* TCPMode.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -709,7 +707,7 @@
 			);
 			name = iOS;
 			productName = iOS;
-			productReference = 99611684723BCA374D291E65 /* iOS.framework */;
+			productReference = 99611684723BCA374D291E65 /* DarkLightning.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		62AFD051A581325F8F7B8152 /* OSX */ = {
@@ -777,6 +775,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AF89140B7C090EF591E64B47;
@@ -861,7 +860,6 @@
 				F5D9E08E424B99704D18DAEA /* OOData.swift in Sources */,
 				D74422097FBBB3B05D4785FF /* OODataArray.swift in Sources */,
 				6A18574AA4DC0919AD576BF4 /* OOUInt16.swift in Sources */,
-				B495CB671EF69DFE00B713A2 /* TCPMode.swift in Sources */,
 				0BD011E1E1170FC49E17B4B3 /* OOUInt32.swift in Sources */,
 				A0ABBD5D1294788814784CB4 /* Port.swift in Sources */,
 				F4D84332974FEAB85CC583CD /* PortDelegate.swift in Sources */,
@@ -972,7 +970,6 @@
 				4E13EF874C42AFD077E34FCC /* OOData.swift in Sources */,
 				6EEB6F548F256F70749FDB84 /* OODataArray.swift in Sources */,
 				200E5D63DCB906BA1FD8D7F1 /* OOUInt16.swift in Sources */,
-				B495CB691EF69DFE00B713A2 /* TCPMode.swift in Sources */,
 				D556E2DD6C7A082A40C2018E /* OOUInt32.swift in Sources */,
 				D6FE66864D6536AAE44C0F9C /* Port.swift in Sources */,
 				992BFA4640EA5998037222A4 /* PortDelegate.swift in Sources */,
@@ -1003,6 +1000,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09107935092271F1FB036BC6 /* Debug.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1031,6 +1029,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0B9A97F5DBFCAC0E03539B2 /* Release.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1038,6 +1037,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BA48BEDE4F0C87AAB751BAC /* Debug.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1045,6 +1045,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48F275A8DFA2BCCEEB0CBFCD /* Release.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

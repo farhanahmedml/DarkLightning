@@ -81,7 +81,8 @@ internal final class USBDaemonSocket: Daemon {
             if socketHandle != CFSocketInvalidHandle {
                 configure(socketHandle: socketHandle)
                 var addr = self.addr()
-                let result = withUnsafeMutablePointer(to: &addr) {
+                var _addr = addr
+                let result = withUnsafeMutablePointer(to: &_addr) {
                     $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
                         connect(socketHandle, $0, socklen_t(MemoryLayout.size(ofValue: addr)))
                     }
